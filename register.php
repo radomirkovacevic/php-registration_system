@@ -40,7 +40,7 @@
 						<label class="register-warning">
 					   	 <?php if(isset($_SESSION['error'])){
 							       print $_SESSION['error'];
-								   session_destroy();
+								   unset($_SESSION['error']);
 								}
 							?>
 						</label><br>
