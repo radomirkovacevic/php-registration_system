@@ -142,6 +142,7 @@ class Proccess extends Exception
 			    $this->proccessUserKey
             );
             $stmt->execute();
+			$_SESSION['error'] = 'Activation link is sended, check spam/junk folder.';
             $this->mailKey();
 		    }
 		catch (Proccess $e){
